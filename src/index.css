@@ -1,68 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --background: 0 0% 96%;
+  --foreground: 0 0% 20%;
+  --card: 356 50% 100%;
+  --card-foreground: 356 5% 15%;
+  --popover: 356 100% 100%;
+  --popover-foreground: 356 100% 10%;
+  --primary: 356 83% 51.6%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 356 30% 90%;
+  --secondary-foreground: 0 0% 0%;
+  --muted: 318 30% 95%;
+  --muted-foreground: 225 8% 53%;
+  --accent: 318 30% 90%;
+  --accent-foreground: 356 5% 15%;
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 356 5% 100%;
+  --border: 356 30% 82%;
+  --input: 356 30% 50%;
+  --ring: 200 83% 51.6%;
+  --radius: 0.75rem;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+.dark {
+  --background: 356 50% 10%;
+  --foreground: 356 5% 100%;
+  --card: 356 50% 10%;
+  --card-foreground: 356 5% 100%;
+  --popover: 356 50% 5%;
+  --popover-foreground: 356 5% 100%;
+  --primary: 356 83% 51.6%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 356 30% 20%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 318 30% 25%;
+  --muted-foreground: 225 8% 53%;
+  --accent: 318 30% 25%;
+  --accent-foreground: 356 5% 95%;
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 356 5% 100%;
+  --border: 356 30% 50%;
+  --input: 356 30% 50%;
+  --ring: 200 83% 51.6%;
+  --radius: 0.75rem;
 }
-a:hover {
-  color: #535bf2;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  body {
+    @apply text-foreground antialiased ;
+  }
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  background-color: #0C1317;
 }
