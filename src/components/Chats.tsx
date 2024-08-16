@@ -2,6 +2,8 @@ import { AiOutlineMore } from "react-icons/ai";
 import { RiChatNewFill } from "react-icons/ri";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
+import Contact from "./Contact";
+import { ScrollArea } from "@/components/ui/scroll-area"
 
 const Chats = () => {
   return (
@@ -31,6 +33,26 @@ const Chats = () => {
           <Button className="bg-[#202C33] hover:bg-[#26353D] h-9 rounded-full mx-2">Não lidas</Button>
           <Button className="bg-[#202C33] hover:bg-[#26353D] h-9 rounded-full">Grupos</Button>
         </div>
+      </div>
+
+      <div className="mx-3 mt-5">
+        <ScrollArea className="h-[30rem] w-auto">
+          <Contact />
+          <Contact />          
+          <Contact />          
+          <Contact />          
+          <Contact />          
+          <Contact />          
+          <Contact />          
+          <Contact />          
+          <Contact />          
+          <Contact />          
+          <Contact />          
+          <Contact />          
+          <Contact />          
+          <Contact />                              
+        </ScrollArea>
+
       </div>
     </div>
   )
