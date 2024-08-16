@@ -15,8 +15,8 @@ const Chats = () => {
           </div>
 
           <div className="flex">
-            <RiChatNewFill className="text-white text-2xl" />
-            <AiOutlineMore  className="text-white text-2xl ml-5"/>
+            <RiChatNewFill className="text-[#8696A0] text-2xl" />
+            <AiOutlineMore  className="text-[#8696A0] text-2xl ml-5"/>
           </div>
         </div>
       </div>
@@ -29,9 +29,9 @@ const Chats = () => {
           />
         </div>
         <div className="mt-3">
-          <Button className="bg-[#202C33] hover:bg-[#26353D] h-9 rounded-full">Tudo</Button>
-          <Button className="bg-[#202C33] hover:bg-[#26353D] h-9 rounded-full mx-2">Não lidas</Button>
-          <Button className="bg-[#202C33] hover:bg-[#26353D] h-9 rounded-full">Grupos</Button>
+          <Button className="bg-[#202C33] hover:bg-[#26353D] text-[#8696A0] h-9 rounded-full">Tudo</Button>
+          <Button className="bg-[#202C33] hover:bg-[#26353D] text-[#8696A0] h-9 rounded-full mx-2">Não lidas</Button>
+          <Button className="bg-[#202C33] hover:bg-[#26353D] text-[#8696A0] h-9 rounded-full">Grupos</Button>
         </div>
       </div>
 
